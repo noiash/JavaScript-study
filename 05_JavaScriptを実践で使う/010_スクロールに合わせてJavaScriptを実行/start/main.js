@@ -13,8 +13,8 @@ const cb = function(entries, observer) {
 const options = {
   root: null,
   rootMargin: "-300px 0px",
-  threshold: 0
-}
+  threshold: [0, 0.5, 1]
+};
 const io = new IntersectionObserver(cb, options);
 io.observe(child);
 // io.observe(child1);
