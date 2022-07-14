@@ -53,6 +53,15 @@ img {
 
 .houses {
   @extend .content-width;
+
+  &__title {
+    @extend .font-lr;
+    @extend .mb-sm;
+  }
+
+  &__btn {
+    text-align: center;
+  }
 }
 
 .main-title {
